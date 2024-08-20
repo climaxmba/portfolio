@@ -3,8 +3,10 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
+  padding: 3rem 0;
+
   min-height: 100vh;
+  width: clamp(280px, 100vw, 1024px);
 }
 
 // /* Enable hover only on non-touch devices */
