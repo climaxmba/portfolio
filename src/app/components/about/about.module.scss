@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap-reverse;
+  align-items: center;
+  min-height: 600px;
+  padding: 3rem 2rem;
+
+  & > * {
+    flex: 1 0 250px;
+    height: clamp(250px, 60vh, 350px);
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    p {
+      line-height: 2.5ch;
+    }
+
+    button {
+      align-self: flex-start;
+    }
+  }
+
+  .imageContainer {
+    background-color: #a8ffe5;
+    border-radius: 40% 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
