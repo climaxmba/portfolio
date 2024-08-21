@@ -1,0 +1,38 @@
+.container {
+  margin: 2rem 1rem;
+
+  h2 {
+    text-align: center;
+    margin: 2rem 0;
+  }
+
+  ul {
+    list-style: circle;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0 1rem;
+
+    li {
+      h3 {
+        display: grid;
+        gap: 6px;
+      }
+
+      .company {
+        font-size: large;
+        margin: 0.5rem 0;
+      }
+
+      .periodLocation {
+        font-weight: 600;
+        font-size: small;
+        opacity: 0.8;
+      }
+
+      .description {
+        margin: 0.5rem 0;
+      }
+    }
+  }
+}
