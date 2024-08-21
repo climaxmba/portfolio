@@ -1,0 +1,29 @@
+.container {
+  h2 {
+    text-align: center;
+  }
+
+  .skillList {
+    margin: 3rem 2rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+
+    li {
+      display: grid;
+      gap: 8px;
+      justify-items: center;
+
+      svg {
+        height: 40px;
+
+        &:not(:hover) {
+          fill: var(--fgcolor) !important;
+        }
+      }
+    }
+  }
+}
