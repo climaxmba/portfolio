@@ -1,0 +1,69 @@
+.container {
+  display: grid;
+  gap: 2rem;
+  padding: 2rem;
+
+  .projectList {
+    display: grid;
+    gap: 3rem;
+
+    .project {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      flex-wrap: wrap;
+      min-height: 350px;
+
+      & > * {
+        flex: 1 0 250px;
+      }
+
+      // Flip every element with an even children index
+      &:nth-child(2n) {
+        flex-direction: row-reverse;
+      }
+
+      .description {
+        display: grid;
+        gap: 1rem;
+
+        .buttonsContainer {
+          display: flex;
+          gap: 8px;
+        }
+      }
+
+      .imageContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .desktop {
+          position: relative;
+          height: 160px;
+          width: clamp(250px, 100%, 320px);
+          max-width: 320px;
+          border-radius: 8px;
+          background: linear-gradient(20deg, violet, salmon);
+          border: 2px solid;
+
+          .mobile {
+            height: 140px;
+            width: 80px;
+            border-radius: 8px;
+            background: linear-gradient(20deg, skyblue, gold);
+
+            position: absolute;
+            right: -16px;
+            bottom: -16px;
+            border: 2px solid;
+          }
+        }
+      }
+    }
+  }
+
+  .header {
+    text-align: center;
+  }
+}

@@ -5,7 +5,7 @@ export default function About() {
   return (
     <section className={styles.container}>
       <div className={styles.about}>
-        <h1>About Me</h1>
+        <h2>About Me</h2>
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus
           tempora illo repudiandae? Similique saepe quo quae iusto esse officia

@@ -33,6 +33,14 @@ body {
   color: var(--accentcolor);
 }
 
+h2 {
+  font-size: 2.5rem;
+}
+
+p {
+  line-height: 2.5ch;
+}
+
 button {
   padding: 12px 16px;
   border-radius: var(--border-radius);
