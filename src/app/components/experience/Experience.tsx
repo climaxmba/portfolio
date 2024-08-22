@@ -1,6 +1,6 @@
 "use client";
 
-import experiences from "@/assets/experienceData";
+import experiences from "@/app/assets/data/experienceData";
 
 import styles from "./experience.module.scss";
 

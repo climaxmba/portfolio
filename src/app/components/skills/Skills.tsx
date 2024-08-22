@@ -1,6 +1,6 @@
 "use client";
 
-import skills from "@/assets/skillsData";
+import skills from "@/app/assets/data/skillsData";
 import styles from "./skills.module.scss";
 
 export default function Skills() {
