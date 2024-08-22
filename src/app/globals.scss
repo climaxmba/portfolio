@@ -18,11 +18,13 @@ body {
   --fgcolor: #282828;
   --bgcolor: #f8f8f8;
   --accentcolor: #3a6b5a;
+  --accentdarkcolor: #2e5648;
 
   &[data-theme-dark] {
     --fgcolor: #f8f8f8;
     --bgcolor: #282828;
     --accentcolor: #8affd8;
+    --accentdarkcolor: #7bddbc;
 
     a {
       color: #00b6b6;
@@ -57,4 +59,27 @@ button {
   border: none;
   font-weight: 600;
   cursor: pointer;
+
+  &:hover {
+    background-color: var(--accentdarkcolor);
+  }
+
+  &:active {
+    color: var(--accentcolor);
+    background-color: transparent;
+  }
+}
+
+button.outlined {
+  background-color: transparent;
+  border: 1px solid var(--accentcolor);
+  color: var(--accentcolor);
+
+  &:hover {
+    background-color: #00ffff10;
+  }
+
+  &:active {
+    border-color: transparent;
+  }
 }

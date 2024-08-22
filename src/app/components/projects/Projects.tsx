@@ -17,10 +17,10 @@ export default function Projects() {
               <p>{project.description}</p>
               <div className={styles.buttonsContainer}>
                 <a href={project.repository} target="_blank">
-                  <button className={styles.sourceCode}>Source Code</button>
+                  <button className="outlined" tabIndex={-1}>Source Code</button>
                 </a>
                 <a href={project.live} target="_blank">
-                  <button className={styles.viewLive}>View Live</button>
+                  <button className={styles.viewLive} tabIndex={-1}>View Live</button>
                 </a>
               </div>
             </div>
