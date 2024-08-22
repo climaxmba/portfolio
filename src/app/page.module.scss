@@ -6,23 +6,5 @@
   padding: 3rem 0;
 
   min-height: 100vh;
-  width: clamp(280px, 100vw, 1024px);
+  width: clamp(280px, 100%, 1024px);
 }
-
-// /* Enable hover only on non-touch devices */
-// @media (hover: hover) and (pointer: fine) {
-//   .card:hover {
-//     background: rgba(var(--card-rgb), 0.1);
-//     border: 1px solid rgba(var(--card-border-rgb), 0.15);
-//   }
-
-//   .card:hover span {
-//     transform: translateX(4px);
-//   }
-// }
-
-// @media (prefers-reduced-motion) {
-//   .card:hover span {
-//     transform: none;
-//   }
-// }
