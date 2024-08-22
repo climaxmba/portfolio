@@ -13,7 +13,7 @@ export default function About() {
           perspiciatis labore reprehenderit omnis tenetur consequatur facilis
           vitae molestias a quasi veritatis. Natus!
         </p>
-        <button type="button">CTA</button>
+        <button type="button">Contact Me</button>
       </div>
       <div className={styles.imageContainer}>
         <span>IMG</span>

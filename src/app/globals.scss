@@ -19,10 +19,18 @@ body {
   --bgcolor: #f8f8f8;
   --accentcolor: #3a6b5a;
 
-  &[theme-dark] {
+  &[data-theme-dark] {
     --fgcolor: #f8f8f8;
     --bgcolor: #282828;
     --accentcolor: #8affd8;
+
+    a {
+      color: #00b6b6;
+    }
+  }
+
+  a {
+    color: #007a7a;
   }
 
   color: var(--fgcolor);
@@ -48,4 +56,5 @@ button {
   color: var(--bgcolor);
   border: none;
   font-weight: 600;
+  cursor: pointer;
 }
