@@ -29,6 +29,14 @@ export default function Experience() {
                 {experience.period} | {experience.location}
               </p>
               <p className={styles.description}>{experience.description}</p>
+              <div className={styles.skillContainer}>
+                <h4>Skills:</h4>
+                <ul className={styles.skills}>
+                  {experience.skills.map((skill) => (
+                    <li key={skill}>{skill}</li>
+                  ))}
+                </ul>
+              </div>
             </li>
           ))}
         </ul>

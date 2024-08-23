@@ -56,6 +56,33 @@
         .description {
           margin: 0.5rem 0;
         }
+
+        .skillContainer {
+          display: flex;
+          flex-direction: row;
+          gap: 1ch;
+        }
+
+        ul.skills {
+          margin: 0;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          font-weight: bold;
+          font-size: small;
+          gap: 0;
+          flex-wrap: wrap;
+
+          li:not(:first-child)::before {
+            content: "";
+            margin: 0 1.5ch;
+            display: inline-block;
+            height: 5px;
+            width: 5px;
+            border-radius: 50%;
+            background-color: var(--fgcolor);
+          }
+        }
       }
     }
   }

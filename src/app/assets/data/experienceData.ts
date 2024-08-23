@@ -1,6 +1,6 @@
 import { StaticImageData } from "next/image";
-import programmifyLogo from "../experienceImages/Programmify.webp"
-import TOPLogo from "../experienceImages/TOP.webp"
+import programmifyLogo from "../experienceImages/Programmify.webp";
+import TOPLogo from "../experienceImages/TOP.webp";
 
 interface Experience {
   company: {
@@ -12,6 +12,7 @@ interface Experience {
   description: string;
   period: string;
   location: string;
+  skills: string[];
 }
 
 const experiences: Experience[] = [
@@ -29,6 +30,7 @@ const experiences: Experience[] = [
       porro, provident consectetur quo iure dolore fugiat!`,
     period: "August 2024 - Present",
     location: "Remote",
+    skills: ["React", "Next.js", "TypeScript", "SASS", "JavaScript", "Git"],
   },
   {
     company: {
@@ -42,6 +44,7 @@ const experiences: Experience[] = [
       consuming REST APIs and integrating Node packages for application functionality.`,
     period: "January 2024 - Present",
     location: "Remote",
+    skills: ["React", "Git", "NPM", "Webpack", "JavaScript", "HTML", "CSS"],
   },
 ];
 
