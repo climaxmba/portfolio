@@ -6,29 +6,56 @@
     margin: 2rem 0;
   }
 
-  ul {
-    list-style: circle;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    margin: 0 1rem;
+  .timeline {
+    position: relative;
+    padding: 4rem 0;
+    padding-left: 30px;
 
-    li {
-      .company {
-        font-size: large;
-        margin: 0.5rem 0;
-        display: flex;
-        align-items: center;
-        gap: 6px;
-      }
+    .ruler {
+      position: absolute;
+      left: 15px;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      border-radius: 5px;
+      transform: translateX(-50%);
+      background: linear-gradient(#6adab9, #7bc4bd, #81b2c2);
+    }
 
-      .periodLocation {
-        font-weight: 600;
-        font-size: small;
-      }
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      margin: 0 1rem;
 
-      .description {
-        margin: 0.5rem 0;
+      li {
+        .company {
+          font-size: large;
+          margin: 0.5rem 0;
+          display: inline-flex;
+          align-items: center;
+          gap: 6px;
+          position: relative;
+
+          img {
+            position: absolute;
+            border: 3px solid var(--accentcolor);
+            border-radius: 50%;
+            margin-top: -50px;
+            margin-left: -32px;
+            transform: translateX(-50%);
+          }
+        }
+
+        .periodLocation {
+          font-weight: 600;
+          font-size: small;
+        }
+
+        .description {
+          margin: 0.5rem 0;
+        }
       }
     }
   }
