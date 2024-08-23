@@ -83,3 +83,15 @@ button.outlined {
     border-color: transparent;
   }
 }
+
+button.icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+
+  svg {
+    fill: currentColor;
+    width: 20px;
+  }
+}

@@ -1,6 +1,6 @@
 export function GitHub() {
   return (
-    <svg style={{ fill: "#181616" }} viewBox="0 0 128 128">
+    <svg viewBox="0 0 128 128">
       <g>
         <path
           fillRule="evenodd"
@@ -28,7 +28,6 @@ export function Play() {
       width="24"
       height="24"
       fill="none"
-      style={{ color: "inherit" }}
       viewBox="0 0 24 24"
     >
       <path
@@ -44,7 +43,7 @@ export function Play() {
 
 export function Plane() {
   return (
-    <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
+    <svg style={{transform: "rotate(90deg)"}} aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
       <path
         fillRule="evenodd"
         d="M12 2a1 1 0 0 1 .932.638l7 18a1 1 0 0 1-1.326 1.281L13 19.517V13a1 1 0 1 0-2 0v6.517l-5.606 2.402a1 1 0 0 1-1.326-1.281l7-18A1 1 0 0 1 12 2Z"

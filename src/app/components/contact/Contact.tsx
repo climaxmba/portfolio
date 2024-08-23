@@ -1,6 +1,7 @@
 "use client";
 import { FormEventHandler, useState } from "react";
 import styles from "./contact.module.scss";
+import { Plane } from "../icons/Icons";
 
 export default function Contact() {
   const [submitting, setSubmitting] = useState(false);
@@ -87,7 +88,7 @@ export default function Contact() {
             Submitting...
           </button>
         ) : (
-          <button type="submit"> Submit</button>
+          <button className="icon-btn" type="submit"> Submit <Plane /></button>
         )}
       </form>
     </section>

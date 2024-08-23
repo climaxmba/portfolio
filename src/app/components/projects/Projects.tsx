@@ -4,6 +4,7 @@ import Image from "next/image";
 import projects from "@/app/assets/data/projectsData";
 
 import styles from "./projects.module.scss";
+import { GitHub, Play } from "../icons/Icons";
 
 export default function Projects() {
   return (
@@ -17,10 +18,10 @@ export default function Projects() {
               <p>{project.description}</p>
               <div className={styles.buttonsContainer}>
                 <a href={project.repository} target="_blank">
-                  <button className="outlined" tabIndex={-1}>Source Code</button>
+                  <button className="outlined icon-btn" tabIndex={-1}><GitHub /> Source Code</button>
                 </a>
                 <a href={project.live} target="_blank">
-                  <button className={styles.viewLive} tabIndex={-1}>View Live</button>
+                  <button className={`${styles.viewLive} icon-btn`} tabIndex={-1}><Play /> View Live</button>
                 </a>
               </div>
             </div>
