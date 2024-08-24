@@ -1,3 +1,10 @@
+@mixin gradient-text($color1, $color2) {
+  background: linear-gradient(60deg, $color1, $color2);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .container {
   display: flex;
   gap: 2rem;
@@ -9,6 +16,21 @@
   & > * {
     flex: 1 0 250px;
     height: clamp(250px, 60vh, 350px);
+  }
+
+  .header {
+    font-size: 1.7rem;
+
+    .name {
+      font-size: 3rem;
+      text-wrap: nowrap;
+      @include gradient-text(lime, turquoise);
+    }
+
+    .role {
+      font-size: 2rem;
+      @include gradient-text(skyblue, darkturquoise);
+    }
   }
 
   .about {
