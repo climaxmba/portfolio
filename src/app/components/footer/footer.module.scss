@@ -6,11 +6,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #82eae6;
-  background-color: #263c3b;
+  color: #d7fff2;
+  background-color: #535353;
 
   h1 {
     font-size: clamp(1rem, 20%, 2rem);
+    font-weight: 400;
     color: inherit;
     text-wrap: nowrap;
     display: flex;
@@ -21,8 +22,17 @@
   }
 
   .socialIcons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
     svg {
-      fill: black;
+      fill: white !important;
+      width: 26px;
+      transition: transform 0.3s ease-in-out;
+
+      &:hover {
+        transform: scale(1.2);
+      }
     }
   }
 }
