@@ -18,24 +18,9 @@
     height: clamp(250px, 60vh, 350px);
   }
 
-  .header {
-    font-size: 2rem;
-    line-height: 3rem;
-
-    .name {
-      font-size: 3rem;
-      text-wrap: nowrap;
-      @include gradient-text(turquoise, lime);
-    }
-
-    .role {
-      @include gradient-text(skyblue, mediumaquamarine);
-    }
-  }
-
   .about {
     display: flex;
-    align-items: start;
+    align-items: flex-start;
     flex-direction: column;
     gap: 1rem;
 

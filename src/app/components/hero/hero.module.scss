@@ -1,0 +1,76 @@
+@mixin gradient-text($color1, $color2) {
+  background: linear-gradient(60deg, $color1, $color2);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  text-align: center;
+  position: relative;
+
+  h1 {
+    margin: 0 1rem !important;
+    font-size: clamp(2.5rem, 10vw, 10vh);
+    text-align: center;
+
+    .name {
+      text-wrap: nowrap;
+      @include gradient-text(turquoise, lime);
+    }
+
+    .role {
+      @include gradient-text(skyblue, mediumaquamarine);
+    }
+  }
+
+  p {
+    font-size: large;
+  }
+
+  .socialIcons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    svg {
+      width: 35px;
+      transition: transform 0.3s ease-in-out;
+
+      &:not(:hover) {
+        fill: var(--fgcolor) !important;
+      }
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  .scroll {
+    position: absolute;
+    opacity: 0.8;
+    z-index: 5;
+    top: 85vh;
+    animation: bounce 3s ease-in-out infinite;
+  }
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(50px);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}

@@ -1,35 +1,22 @@
 "use client";
-import Link from "next/link";
-import { ReactTyped } from "react-typed";
-import { Plane } from "../icons/Icons";
 import profileImage from "../../assets/profile.webp";
+import Link from "next/link";
+import { Plane } from "../icons/Icons";
 import styles from "./about.module.scss";
 
 export default function About() {
-  const roles = [
-    "Frontend Web Developer.",
-    "React Developer.",
-    "Software Engineer.",
-  ];
   return (
     <section id="about" className={styles.container}>
       <div className={styles.about}>
-        <h1 className={styles.header}>
-          I am <span className={styles.name}>Climax Mba</span>,<br />a{" "}
-          <ReactTyped
-            className={styles.role}
-            strings={roles}
-            typeSpeed={180}
-            backDelay={3500}
-            loop
-          />
-        </h1>
+        <h1 className={styles.header}>About Me</h1>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus
-          tempora illo repudiandae? Similique saepe quo quae iusto esse officia
-          quod quidem inventore, aperiam aliquam non praesentium laudantium,
-          perspiciatis labore reprehenderit omnis tenetur consequatur facilis
-          vitae molestias a quasi veritatis. Natus!
+          {`I am a collaborative team player with a proven track record of contributing
+          to open-source projects. Eager to apply my technical skills and
+          problem-solving abilities to real-world projects. I've gained valuable
+          experience working in diverse teams, collaborating effectively with
+          developers from around the globe. My strong foundation in JavaScript and React equips me to contribute
+          meaningfully to a variety of projects. I'm excited to join a dynamic
+          team and leverage my skills to create innovative solutions.`}
         </p>
         <Link href="/#contact">
           <button type="button" className="icon-btn">
