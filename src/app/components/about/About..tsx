@@ -1,15 +1,28 @@
 "use client";
 import Link from "next/link";
+import { ReactTyped } from "react-typed";
 import { Plane } from "../icons/Icons";
+import profileImage from "../../assets/profile.webp";
 import styles from "./about.module.scss";
 
 export default function About() {
+  const roles = [
+    "Frontend Web Developer.",
+    "React Developer.",
+    "Software Engineer.",
+  ];
   return (
     <section id="about" className={styles.container}>
       <div className={styles.about}>
         <h1 className={styles.header}>
-          I am <span className={styles.name}>Climax Mba</span>,<br />
-          a Frontend <span className={styles.role}>React</span> Developer.
+          I am <span className={styles.name}>Climax Mba</span>,<br />a{" "}
+          <ReactTyped
+            className={styles.role}
+            strings={roles}
+            typeSpeed={180}
+            backDelay={3500}
+            loop
+          />
         </h1>
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus
@@ -24,9 +37,10 @@ export default function About() {
           </button>
         </Link>
       </div>
-      <div className={styles.imageContainer}>
-        <span>IMG</span>
-      </div>
+      <div
+        style={{ backgroundImage: `url(${profileImage.src})` }}
+        className={styles.imageContainer}
+      ></div>
     </section>
   );
 }

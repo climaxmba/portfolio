@@ -19,7 +19,7 @@
   }
 
   .header {
-    font-size: 1.7rem;
+    font-size: 2rem;
     line-height: 3rem;
 
     .name {
@@ -29,7 +29,6 @@
     }
 
     .role {
-      font-size: 2rem;
       @include gradient-text(skyblue, mediumaquamarine);
     }
   }
@@ -46,10 +45,11 @@
   }
 
   .imageContainer {
+    max-width: 400px;
     background-color: #a8ffe5;
-    border-radius: 40% 30%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    border-radius: 30% 70% 41% 59% / 30% 43% 57% 70% ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 }
