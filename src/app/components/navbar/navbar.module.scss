@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-around;
+  background-color: aliceblue;
+  padding: 0.5rem;
+  width: 100%;
+  color: var(--fgcolor);
+  background-color: var(--bgcolor);
+  box-shadow: 0 1px 3px 3px #80808040;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+
+  .links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+
+    a {
+      font-weight: 500;
+      text-decoration: none;
+    }
+  }
+}

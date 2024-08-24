@@ -95,3 +95,14 @@ button.icon-btn {
     width: 20px;
   }
 }
+
+button.icon-wrapper {
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  color: inherit;
+  
+  &:active {
+    background-color: #80808010;
+  }
+}
