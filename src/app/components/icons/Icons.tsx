@@ -43,12 +43,52 @@ export function Play() {
 
 export function Plane() {
   return (
-    <svg style={{transform: "rotate(90deg)"}} aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
+    <svg
+      style={{ transform: "rotate(90deg)" }}
+      aria-hidden="true"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+    >
       <path
         fillRule="evenodd"
         d="M12 2a1 1 0 0 1 .932.638l7 18a1 1 0 0 1-1.326 1.281L13 19.517V13a1 1 0 1 0-2 0v6.517l-5.606 2.402a1 1 0 0 1-1.326-1.281l7-18A1 1 0 0 1 12 2Z"
         clipRule="evenodd"
       />
+    </svg>
+  );
+}
+
+export function Dark() {
+  return (
+    <svg
+      fill="none"
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      viewBox="0 0 24 24"
+      style={{ height: "20px", width: "20px" }}
+    >
+      <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+    </svg>
+  );
+}
+
+export function Light() {
+  return (
+    <svg
+      fill="none"
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      viewBox="0 0 24 24"
+      style={{ height: "20px", width: "20px" }}
+    >
+      <path stroke="none" d="M0 0h24v24H0z" />
+      <path d="M16 12 A4 4 0 0 1 12 16 A4 4 0 0 1 8 12 A4 4 0 0 1 16 12 z" />
+      <path d="M3 12h1m8-9v1m8 8h1m-9 8v1M5.6 5.6l.7.7m12.1-.7l-.7.7m0 11.4l.7.7m-12.1-.7l-.7.7" />
     </svg>
   );
 }

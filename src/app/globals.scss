@@ -100,9 +100,15 @@ button.icon-wrapper {
   background-color: transparent;
   border: none;
   border-radius: 50%;
+  padding: 6px;
   color: inherit;
   
   &:active {
     background-color: #80808010;
+  }
+
+  svg {
+    width: 25px !important;
+    height: 25px !important;
   }
 }

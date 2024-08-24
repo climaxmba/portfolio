@@ -1,9 +1,23 @@
 "use client";
+import { useEffect, useState } from "react";
 import Image from "next/image";
-import styles from "./navbar.module.scss";
 import HashNavLink from "../hashNavLink/HashNavLink";
+import styles from "./navbar.module.scss";
+import { Dark, Light } from "../icons/Icons";
 
 export default function Navbar() {
+  const isUserChoiceDark = matchMedia("(prefers-color-scheme: dark)").matches;
+  const [isDarkMode, setIsDarkMode] = useState(isUserChoiceDark);
+
+  useEffect(() => {
+    if (isDarkMode) document.body.setAttribute("data-theme-dark", "");
+    else document.body.removeAttribute("data-theme-dark");
+  }, [isDarkMode]);
+
+  const handleModeSwitch = () => {
+    setIsDarkMode((prev) => !prev);
+  };
+
   return (
     <nav className={styles.container}>
       <Image alt="Logo" src="/next.svg" width={40} height={40} />
@@ -36,7 +50,9 @@ export default function Navbar() {
         </li>
       </ul>
 
-      <button className="icon-wrapper">Dark Mode</button>
+      <button title="Toggle Theme" className="icon-wrapper" onClick={handleModeSwitch}>
+        {isDarkMode ? <Light /> : <Dark />}
+      </button>
     </nav>
   );
 }
