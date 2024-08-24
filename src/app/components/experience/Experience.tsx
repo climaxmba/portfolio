@@ -7,7 +7,7 @@ import styles from "./experience.module.scss";
 
 export default function Experience() {
   return (
-    <section className={styles.container}>
+    <section id="experience" className={styles.container}>
       <h2>Experience</h2>
 
       <div className={styles.timeline}>

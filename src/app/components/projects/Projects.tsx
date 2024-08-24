@@ -8,7 +8,7 @@ import { GitHub, Play } from "../icons/Icons";
 
 export default function Projects() {
   return (
-    <section className={styles.container}>
+    <section id="projects" className={styles.container}>
       <h2 className={styles.header}>Featured Projects</h2>
       <div className={styles.projectList}>
         {projects.map((project) => (
