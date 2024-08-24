@@ -8,8 +8,8 @@ export default function About() {
     <section id="about" className={styles.container}>
       <div className={styles.about}>
         <h1 className={styles.header}>
-          I am <span className={styles.name}>Climax Mba</span>,{" "}
-          <span className={styles.role}>Frontend Developer</span>.
+          I am <span className={styles.name}>Climax Mba</span>,<br />
+          a Frontend <span className={styles.role}>React</span> Developer.
         </h1>
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus

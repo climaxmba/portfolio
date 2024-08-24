@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import styles from "./navbar.module.scss";
-import Link from "next/link";
+import HashNavLink from "../hashNavLink/HashNavLink";
 
 export default function Navbar() {
   return (
@@ -9,11 +9,31 @@ export default function Navbar() {
       <Image alt="Logo" src="/next.svg" width={40} height={40} />
 
       <ul className={styles.links}>
-        <li><Link href="/#about">About</Link></li>
-        <li><Link href="/#projects">Projects</Link></li>
-        <li><Link href="/#skills">Skills</Link></li>
-        <li><Link href="/#experience">Experience</Link></li>
-        <li><Link href="/#contact">Contact</Link></li>
+        <li>
+          <HashNavLink href="/#about" activeClassName={styles.active}>
+            About
+          </HashNavLink>
+        </li>
+        <li>
+          <HashNavLink href="/#projects" activeClassName={styles.active}>
+            Projects
+          </HashNavLink>
+        </li>
+        <li>
+          <HashNavLink href="/#skills" activeClassName={styles.active}>
+            Skills
+          </HashNavLink>
+        </li>
+        <li>
+          <HashNavLink href="/#experience" activeClassName={styles.active}>
+            Experience
+          </HashNavLink>
+        </li>
+        <li>
+          <HashNavLink href="/#contact" activeClassName={styles.active}>
+            Contact
+          </HashNavLink>
+        </li>
       </ul>
 
       <button className="icon-wrapper">Dark Mode</button>

@@ -20,16 +20,17 @@
 
   .header {
     font-size: 1.7rem;
+    line-height: 3rem;
 
     .name {
       font-size: 3rem;
       text-wrap: nowrap;
-      @include gradient-text(lime, turquoise);
+      @include gradient-text(turquoise, lime);
     }
 
     .role {
       font-size: 2rem;
-      @include gradient-text(skyblue, darkturquoise);
+      @include gradient-text(skyblue, mediumaquamarine);
     }
   }
 

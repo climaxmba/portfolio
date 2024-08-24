@@ -1,5 +1,6 @@
 .main {
   display: flex;
+  gap: 1rem;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -7,4 +8,8 @@
 
   min-height: 100vh;
   width: clamp(280px, 100%, 1024px);
+
+  section > *:first-child {
+    margin-top: 4rem;
+  }
 }
