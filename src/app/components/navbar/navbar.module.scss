@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: space-around;
   background-color: aliceblue;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   width: 100%;
   color: var(--fgcolor);
   background-color: var(--bgcolor);
@@ -19,7 +19,7 @@
 
   .links {
     list-style: none;
-    display: flex;
+    display: none;
     gap: 1rem;
     align-items: center;
 
@@ -30,10 +30,94 @@
       border-radius: 15px;
       transition: all ease 0.3s;
 
-      &.active:first-of-type {
+      &.active {
         background-color: var(--accentcolor);
         color: var(--bgcolor);
       }
     }
+  }
+
+  .mobileSeperator {
+    flex: 1;
+  }
+
+  .mobileMenu {
+    .menu {
+      position: absolute;
+      top: 0;
+      right: 0;
+      animation: move-to-view 0.5s ease-in-out 1;
+
+      max-width: 230px;
+      padding: 1.8rem 1rem;
+      background-color: var(--bgcolor);
+      min-height: 100vh;
+      display: flex;
+      gap: 1rem;
+      flex-direction: column;
+      justify-content: space-around;
+
+      .links {
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        align-items: flex-start;
+
+        a {
+          display: flex;
+          align-items: center;
+          gap: 6px;
+
+          svg {
+            width: 20px;
+          }
+        }
+      }
+
+      .connect {
+        display: grid;
+        gap: 0.5rem;
+
+        & > *:last-child {
+          display: flex;
+          gap: 8px;
+          justify-content: center;
+
+          svg {
+            width: 30px;
+
+            &:not(:hover) {
+              fill: currentColor !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (width > 720px) {
+  .container > .links {
+    display: flex;
+  }
+
+  .mobileSeperator {
+    display: none;
+  }
+
+  .mobileMenu {
+    display: none;
+  }
+}
+
+@keyframes move-to-view {
+  from {
+    transform: translateX(100vw);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
   }
 }

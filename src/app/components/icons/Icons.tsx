@@ -82,13 +82,42 @@ export function Light() {
       stroke="currentColor"
       strokeLinecap="round"
       strokeLinejoin="round"
-      strokeWidth={2}
       viewBox="0 0 24 24"
-      style={{ height: "20px", width: "20px" }}
+      style={{ strokeWidth: 2, height: "20px", width: "20px" }}
     >
       <path stroke="none" d="M0 0h24v24H0z" />
       <path d="M16 12 A4 4 0 0 1 12 16 A4 4 0 0 1 8 12 A4 4 0 0 1 16 12 z" />
       <path d="M3 12h1m8-9v1m8 8h1m-9 8v1M5.6 5.6l.7.7m12.1-.7l-.7.7m0 11.4l.7.7m-12.1-.7l-.7.7" />
+    </svg>
+  );
+}
+
+export function Menu() {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      style={{ height: 28, width: 28 }}
+    >
+      <path fill="none" d="M0 0h24v24H0z" />
+      <path d="M18 18v2H6v-2h12zm3-7v2H3v-2h18zm-3-7v2H6V4h12z" />
+    </svg>
+  );
+}
+
+export function Close() {
+  return (
+    <svg>
+      <path
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        style={{ strokeWidth: 32 }}
+        d="M368 368L144 144M368 144L144 368"
+      />
     </svg>
   );
 }

@@ -25,6 +25,7 @@ export default function About() {
         </Link>
       </div>
       <div
+        role="img"
         style={{ backgroundImage: `url(${profileImage.src})` }}
         className={styles.imageContainer}
       ></div>
