@@ -2,6 +2,7 @@
 import type React from "react";
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { useNavContext } from "@/lib/NavbarContext";
 
 interface HashNavLinkProps {
   children: React.ReactNode;
@@ -18,22 +19,25 @@ export default function HashNavLink({
   activeClassName = "active",
 }: HashNavLinkProps) {
   const [isActive, setIsActive] = useState(false);
+  const { activeId, removeId, addId } = useNavContext();
+
+  const id = href.slice(1).replace("#", "");
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         if (entries[0].isIntersecting) {
-          setIsActive(true);
+          setIsActive(activeId === id);
+          addId(id);
         } else {
-          setIsActive(false);
+          setIsActive(activeId === id);
+          removeId(id);
         }
       },
-      { rootMargin: "-200px 0px -200px 0px" }
+      { rootMargin: "0px 0px -100px 0px" }
     );
 
-    const targetElement = document.getElementById(
-      href.slice(1).replace("#", "")
-    );
+    const targetElement = document.getElementById(id);
 
     if (targetElement) {
       observer.observe(targetElement);
@@ -44,7 +48,7 @@ export default function HashNavLink({
         observer.unobserve(targetElement);
       }
     };
-  }, [href]);
+  }, [activeId, addId, id, removeId]);
 
   return (
     <Link
