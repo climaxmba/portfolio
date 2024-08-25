@@ -21,7 +21,7 @@ export default function Navbar() {
 
   return (
     <nav className={styles.container}>
-      <Image alt="Logo" src="/next.svg" width={40} height={40} />
+      <Image alt="Logo" src="/logo.webp" width={40} height={40} />
 
       <NavbarProvider>
         <ul className={styles.links}>
