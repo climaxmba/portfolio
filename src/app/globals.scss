@@ -37,6 +37,7 @@ body {
 
   color: var(--fgcolor);
   background-color: var(--bgcolor);
+  transition: background-color ease 0.5s, color ease 0.8s;
 }
 
 :where(h1, h2, h3, h4, h5, h6) {
@@ -102,7 +103,7 @@ button.icon-wrapper {
   border-radius: 50%;
   padding: 6px;
   color: inherit;
-  
+
   &:active {
     background-color: #80808010;
   }
