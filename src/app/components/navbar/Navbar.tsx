@@ -16,7 +16,7 @@ import {
 } from "@mdi/js";
 
 export default function Navbar() {
-  const isUserChoiceDark = matchMedia("(prefers-color-scheme: dark)").matches;
+  const isUserChoiceDark = false;
   const [isDarkMode, setIsDarkMode] = useState(isUserChoiceDark);
 
   useEffect(() => {
