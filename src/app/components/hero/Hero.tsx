@@ -5,7 +5,7 @@ import { GitHub, LinkedIn } from "../icons/Icons";
 
 export default function Hero() {
   const roles = [
-    "Frontend Web Developer.",
+    "Frontend Developer.",
     "React Developer.",
     "Software Engineer.",
   ];
