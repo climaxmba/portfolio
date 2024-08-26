@@ -1,7 +1,6 @@
 "use client";
 import type React from "react";
 import { useEffect, useState } from "react";
-import Link from "next/link";
 import { useNavContext } from "@/lib/NavbarContext";
 
 interface HashNavLinkProps {
@@ -51,11 +50,11 @@ export default function HashNavLink({
   }, [activeId, addId, id, removeId]);
 
   return (
-    <Link
+    <a
       href={href}
       className={isActive ? `${activeClassName} ${className}` : className}
     >
       {children}
-    </Link>
+    </a>
   );
 }
