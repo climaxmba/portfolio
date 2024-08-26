@@ -1,10 +1,21 @@
 "use client";
-import { FormEventHandler, useState } from "react";
+import { FormEventHandler, useEffect, useState } from "react";
 import styles from "./contact.module.scss";
 import { Plane } from "../icons/Icons";
 
 export default function Contact() {
   const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const [success, setSuccess] = useState<string | null>(null);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      if (error) setError(null);
+      if (success) setSuccess(null);
+    }, 3500);
+
+    return () => clearTimeout(timeout);
+  }, [error, success]);
 
   const handleSubmit: FormEventHandler<HTMLFormElement> = async (e) => {
     e.preventDefault();
@@ -26,13 +37,14 @@ export default function Contact() {
 
       // Success & error handling
       if (response.ok) {
-        // Success message
+        setError(null);
         form.reset();
+        setSuccess("Thanks! Your entry has been recorded")
       } else {
-        // Set error
+        setError(`Error: ${response.status} ${response.statusText}`);
       }
     } else {
-      // Set error
+      setError("An error occured!");
     }
     setSubmitting(false);
   };
@@ -48,6 +60,12 @@ export default function Contact() {
         </a>
         , or send me a message:
       </p>
+
+      {error ? (
+        <div className={styles.error}>{error}</div>
+      ) : success ? (
+        <div className={styles.success}>{success}</div>
+      ) : <></>}
 
       <form
         action="/"
@@ -88,7 +106,10 @@ export default function Contact() {
             Submitting...
           </button>
         ) : (
-          <button className="icon-btn" type="submit"> Submit <Plane /></button>
+          <button className="icon-btn" type="submit">
+            {" "}
+            Submit <Plane />
+          </button>
         )}
       </form>
     </section>

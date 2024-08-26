@@ -8,6 +8,24 @@
   align-items: center;
   justify-content: center;
 
+  .error,
+  .success {
+    position: fixed;
+    top: 80px;
+    z-index: 20;
+    padding: 1rem;
+    max-width: 250px;
+    border-radius: var(--border-radius);
+
+    &.error {
+      background-color: #ff000025;
+    }
+
+    &.success {
+      background-color: #00ff0025;
+    }
+  }
+
   .form {
     display: grid;
     gap: 2rem;
