@@ -23,11 +23,12 @@ const experiences: Experience[] = [
       url: "http://www.programmify.org/",
     },
     role: "Frontend Developer Intern",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem
-      obcaecati laboriosam magni aspernatur sapiente fugit voluptatem,
-      odio blanditiis. Error dolorum earum accusamus quam itaque culpa
-      officiis deleniti. Voluptates deleniti tenetur earum eligendi. Nam
-      porro, provident consectetur quo iure dolore fugiat!`,
+    description: `As a frontend developer intern,
+      I'm actively engaged in a comprehensive program that combines hands-on project work with mentorship and team collaboration.
+      During the initial phase, I work on individual projects under the guidance of experienced mentors.
+      We meet twice a week for code reviews, where I receive valuable feedback and guidance to enhance my coding skills.
+      Following the completion of these personal projects, we form teams and collaborate on launching a product.
+      This collaborative phase allows me to apply the knowledge and skills I've acquired during the individual projects to real-world development challenges.`,
     period: "August 2024 - Present",
     location: "Remote",
     skills: ["React", "Next.js", "TypeScript", "SASS", "JavaScript", "Git"],
@@ -40,7 +41,7 @@ const experiences: Experience[] = [
     },
     role: "Student Frontend Developer",
     description: `The Odin Project is an Open Source curriculum for Full-Stack web development.
-      So far, I'm implementing application designs, writing unit tests to verify the functionality of web applications,
+      Here, I'm implementing application designs, writing unit tests to verify the functionality of web applications,
       consuming REST APIs and integrating Node packages for application functionality.`,
     period: "January 2024 - Present",
     location: "Remote",
