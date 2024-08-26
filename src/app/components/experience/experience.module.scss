@@ -52,6 +52,7 @@
         .periodLocation {
           font-weight: 600;
           font-size: small;
+          opacity: 0.8;
         }
 
         .description {
@@ -70,7 +71,7 @@
           flex-direction: row;
           align-items: center;
           font-weight: 500;
-          font-size: small;
+          opacity: 0.8;
           gap: 0;
           flex-wrap: wrap;
 
