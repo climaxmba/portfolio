@@ -18,10 +18,12 @@ import {
 import styles from "./navbar.module.scss";
 
 export default function Navbar() {
-  const isUserChoiceDark = false;
-  const [isDarkMode, setIsDarkMode] = useState(isUserChoiceDark);
+  const [isDarkMode, setIsDarkMode] = useState<null | boolean>(null);
 
   useEffect(() => {
+    if (isDarkMode === null)
+      setIsDarkMode(matchMedia("(prefers-color-scheme: dark)").matches);
+
     if (isDarkMode) document.body.setAttribute("data-theme-dark", "");
     else document.body.removeAttribute("data-theme-dark");
   }, [isDarkMode]);
