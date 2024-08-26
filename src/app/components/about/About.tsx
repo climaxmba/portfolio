@@ -9,12 +9,12 @@ export default function About() {
     <section id="about" className={styles.container}>
       <div className={styles.about}>
         <h1 className={styles.header}>About Me</h1>
+        
         <p>
           {`I am a collaborative team player with a proven track record of contributing
-          to open-source projects. Eager to apply my technical skills and
-          problem-solving abilities to real-world projects. I've gained valuable
-          experience working in diverse teams, collaborating effectively with
-          developers from around the globe. My strong foundation in JavaScript and React equips me to contribute
+          to Open-Source projects. Eager to apply my technical skills and
+          problem-solving abilities to real-world projects.
+          My solid foundation in JavaScript and React equips me to contribute
           meaningfully to a variety of projects. I'm excited to join a dynamic
           team and leverage my skills to create innovative solutions.`}
         </p>
@@ -24,6 +24,7 @@ export default function About() {
           </button>
         </Link>
       </div>
+
       <div
         role="img"
         style={{ backgroundImage: `url(${profileImage.src})` }}
