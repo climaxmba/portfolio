@@ -39,7 +39,7 @@ export default function Contact() {
       if (response.ok) {
         setError(null);
         form.reset();
-        setSuccess("Thanks! Your entry has been recorded")
+        setSuccess("Thanks! Your entry has been recorded.")
       } else {
         setError(`Error: ${response.status} ${response.statusText}`);
       }
@@ -106,7 +106,7 @@ export default function Contact() {
             Submitting...
           </button>
         ) : (
-          <button className="icon-btn" type="submit">
+          <button title="Submit" className="icon-btn" type="submit">
             {" "}
             Submit <Plane />
           </button>

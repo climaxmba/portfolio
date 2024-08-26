@@ -86,13 +86,13 @@ function MobileMenu() {
 
   return (
     <div className={styles.mobileMenu}>
-      <button className="icon-wrapper" onClick={() => setMenuOpen(true)}>
+      <button title="Menu" className="icon-wrapper" onClick={() => setMenuOpen(true)}>
         <Menu />
       </button>
 
       {menuOpen ? (
         <div className={styles.menu}>
-          <button onClick={() => setMenuOpen(false)} className="icon-wrapper">
+          <button title="Close Menu" onClick={() => setMenuOpen(false)} className="icon-wrapper">
             <Icon path={mdiClose} />
           </button>
 

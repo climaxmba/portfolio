@@ -19,7 +19,7 @@ export default function About() {
           team and leverage my skills to create innovative solutions.`}
         </p>
         <Link href="/#contact">
-          <button type="button" className="icon-btn">
+          <button title="Contact Me" type="button" className="icon-btn">
             Contact Me <Plane />
           </button>
         </Link>

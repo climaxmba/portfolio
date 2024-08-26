@@ -8,7 +8,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Frontend Developer | Climax Mba",
-  description: "A personal portfolio for Climax Mba",
+  description: `Frontend web developer, proficient in TypeScript, Next.js, and Redux, with a solid foundation in React, JavaScript and unit testing.
+    Experienced in contributing to open-source projects and collaborating with teams.`,
 };
 
 export default function RootLayout({

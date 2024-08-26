@@ -1,0 +1,11 @@
+# robots.txt for a Next.js portfolio
+
+# Allow all bots to access the root URL and any static assets
+User-agent: *
+Allow: /
+Allow: /_next/static/*
+
+# Disallow crawling of dynamic routes or unnecessary files
+Disallow: /_next/image/*
+Disallow: /api/*
+Disallow: /sitemap.xml

@@ -18,10 +18,10 @@ export default function Projects() {
               <p>{project.description}</p>
               <div className={styles.buttonsContainer}>
                 <a href={project.repository} target="_blank">
-                  <button className="outlined icon-btn" tabIndex={-1}><GitHub /> Source Code</button>
+                  <button title="View source code" className="outlined icon-btn" tabIndex={-1}><GitHub /> Source Code</button>
                 </a>
                 <a href={project.live} target="_blank">
-                  <button className={`${styles.viewLive} icon-btn`} tabIndex={-1}><Play /> View Live</button>
+                  <button title="Open in new tab" className={`${styles.viewLive} icon-btn`} tabIndex={-1}><Play /> View Live</button>
                 </a>
               </div>
             </div>
