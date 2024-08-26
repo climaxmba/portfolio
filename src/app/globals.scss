@@ -14,6 +14,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 100vw;
+  overflow-x: hidden;
 
   --fgcolor: #282828;
   --bgcolor: #f8f8f8;

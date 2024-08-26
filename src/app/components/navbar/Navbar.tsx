@@ -1,9 +1,9 @@
 "use client";
 import { useEffect, useState } from "react";
 import Image from "next/image";
+
 import HashNavLink from "../hashNavLink/HashNavLink";
-import styles from "./navbar.module.scss";
-import { Close, Dark, GitHub, Light, LinkedIn, Menu } from "../icons/Icons";
+import { Dark, GitHub, Light, LinkedIn, Menu } from "../icons/Icons";
 import NavbarProvider from "@/lib/NavbarContext";
 import Icon from "@mdi/react";
 import {
@@ -14,6 +14,8 @@ import {
   mdiTools,
   mdiTooltipAccount,
 } from "@mdi/js";
+
+import styles from "./navbar.module.scss";
 
 export default function Navbar() {
   const isUserChoiceDark = false;
