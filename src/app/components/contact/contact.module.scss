@@ -14,15 +14,15 @@
     top: 80px;
     z-index: 20;
     padding: 1rem;
-    max-width: 250px;
+    max-width: 280px;
     border-radius: var(--border-radius);
 
     &.error {
-      background-color: #ff000025;
+      background-color: var(--errorbg);
     }
 
     &.success {
-      background-color: #00ff0025;
+      background-color: var(--successbg);
     }
   }
 

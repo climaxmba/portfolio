@@ -21,12 +21,16 @@ body {
   --bgcolor: #f8f8f8;
   --accentcolor: #3a6b5a;
   --accentdarkcolor: #2e5648;
+  --errorbg: #f2d9d9;
+  --successbg: #d9f2df;
 
   &[data-theme-dark] {
     --fgcolor: #f8f8f8;
     --bgcolor: #282828;
     --accentcolor: #8affd8;
     --accentdarkcolor: #7bddbc;
+    --errorbg: #4d3131;
+    --successbg: #3b5240;
 
     a {
       color: #00b6b6;

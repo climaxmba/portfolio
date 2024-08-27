@@ -77,15 +77,16 @@ export default function Contact() {
       >
         <input type="hidden" name="form-name" value="contact" />
         <label>
-          Name:{" "}
-          <input type="text" name="name" placeholder="Alex Smith" required />
+          Name:
+          <input type="text" name="name" placeholder="Alex Smith" autoComplete="name" required />
         </label>
         <label>
-          Email:{" "}
+          Email:
           <input
             type="email"
             name="email"
             placeholder="alexsmith@example.com"
+            autoComplete="email"
             required
           />
         </label>
@@ -107,7 +108,6 @@ export default function Contact() {
           </button>
         ) : (
           <button title="Submit" className="icon-btn" type="submit">
-            {" "}
             Submit <Plane />
           </button>
         )}

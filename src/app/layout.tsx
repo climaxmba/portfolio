@@ -4,7 +4,11 @@ import Footer from "./components/footer/Footer";
 import Navbar from "./components/navbar/Navbar";
 import "./globals.scss";
 
-const mono = Ubuntu_Mono({weight: ["400", "700"], subsets: ["latin"]});
+const mono = Ubuntu_Mono({
+  weight: ["400", "700"],
+  subsets: ["latin"],
+  fallback: ["Courier New", "Courier", "monospace"],
+});
 
 export const metadata: Metadata = {
   title: "Frontend Developer | Climax Mba",

@@ -9,7 +9,7 @@ export default function About() {
     <section id="about" className={styles.container}>
       <div className={styles.about}>
         <h1 className={styles.header}>About Me</h1>
-        
+
         <p>
           {`I am a collaborative team player with a proven track record of contributing
           to Open-Source projects. Eager to apply my technical skills and
@@ -27,6 +27,7 @@ export default function About() {
 
       <div
         role="img"
+        title="Author's Image"
         style={{ backgroundImage: `url(${profileImage.src})` }}
         className={styles.imageContainer}
       ></div>

@@ -1,7 +1,7 @@
 @mixin gradient-text($color1, $color2) {
   background: linear-gradient(60deg, $color1, $color2);
-  background-clip: text;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
