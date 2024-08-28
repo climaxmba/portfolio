@@ -23,7 +23,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={mono.className}>
+      <body
+        style={{
+          fontFamily: mono.style.fontFamily,
+          fontStyle: mono.style.fontStyle,
+        }}
+      >
         <Navbar />
         {children}
         <Footer />

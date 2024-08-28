@@ -1,21 +1,20 @@
-import Hero from "./components/hero/Hero";
-import About from "./components/about/About";
-import Projects from "./components/projects/Projects";
-import Skills from "./components/skills/Skills";
-import Experience from "./components/experience/Experience";
-import Contact from "./components/contact/Contact";
-
+import HeroSection from "./components/heroSection/HeroSection";
+import AboutSection from "./components/aboutSection/AboutSection";
+import ProjectsSection from "./components/projectsSection/ProjectsSection";
+import SkillsSection from "./components/skillsSection/SkillsSection";
+import ExperienceSection from "./components/experienceSection/ExperienceSection";
+import ContactSection from "./components/contactSection/ContactSection";
 import styles from "./page.module.scss";
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <Hero />
-      <About />
-      <Projects />
-      <Skills />
-      <Experience />
-      <Contact />
+      <HeroSection />
+      <AboutSection />
+      <ProjectsSection />
+      <SkillsSection />
+      <ExperienceSection />
+      <ContactSection />
     </main>
   );
 }

@@ -1,9 +1,9 @@
 "use client";
 import { ReactTyped } from "react-typed";
-import styles from "./hero.module.scss";
 import { GitHub, LinkedIn } from "../icons/Icons";
+import styles from "./heroSection.module.scss";
 
-export default function Hero() {
+export default function HeroSection() {
   const roles = [
     "Frontend Developer.",
     "React Developer.",
@@ -22,7 +22,7 @@ export default function Hero() {
           loop
         />
       </h1>
-      <p>
+      <p className={styles.about}>
         {`I'm Looking to build awesome things and collaborate with awesome people. 🙂`}
         <br />
         {`Let's create something amazing together! 🔥`}

@@ -1,13 +1,26 @@
 "use client";
+import { useRef } from "react";
+import { motion, useInView } from "framer-motion";
 import profileImage from "../../assets/profile.webp";
-import Link from "next/link";
 import { Plane } from "../icons/Icons";
-import styles from "./about.module.scss";
+
+import styles from "./aboutSection.module.scss";
 
 export default function About() {
+  const ref = useRef(null);
+  const visible = useInView(ref, {
+    margin: "0px 100px -50px 0px",
+  });
+
   return (
     <section id="about" className={styles.container}>
-      <div className={styles.about}>
+      <motion.div
+        ref={ref}
+        initial={{ opacity: 0, y: "20%" }}
+        animate={visible ? { opacity: 1, y: 0 } : undefined}
+        transition={{ type: "tween", duration: 1 }}
+        className={styles.about}
+      >
         <h1 className={styles.header}>About Me</h1>
 
         <p>
@@ -18,12 +31,13 @@ export default function About() {
           meaningfully to a variety of projects. I'm excited to join a dynamic
           team and leverage my skills to create innovative solutions.`}
         </p>
-        <Link href="/#contact">
+
+        <a href="/#contact">
           <button title="Contact Me" type="button" className="icon-btn">
             Contact Me <Plane />
           </button>
-        </Link>
-      </div>
+        </a>
+      </motion.div>
 
       <div
         role="img"

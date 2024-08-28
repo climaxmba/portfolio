@@ -1,9 +1,9 @@
 "use client";
 import { FormEventHandler, useEffect, useState } from "react";
-import styles from "./contact.module.scss";
 import { Plane } from "../icons/Icons";
+import styles from "./contactSection.module.scss";
 
-export default function Contact() {
+export default function ContactSection() {
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [success, setSuccess] = useState<string | null>(null);

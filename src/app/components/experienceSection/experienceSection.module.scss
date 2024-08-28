@@ -20,6 +20,24 @@
       border-radius: 5px;
       transform: translateX(-50%);
       background: linear-gradient(#6adab9, #7bc4bd, #81b2c2);
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        height: 50px;
+        width: 4px;
+      }
+
+      &::before {
+        top: 0;
+        background: linear-gradient(0deg, transparent, var(--bgcolor));
+      }
+
+      &::after {
+        bottom: 0;
+        background: linear-gradient(0deg, var(--bgcolor), transparent);
+      }
     }
 
     ul {

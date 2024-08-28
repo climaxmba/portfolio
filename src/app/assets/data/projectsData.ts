@@ -1,5 +1,4 @@
-import { type StaticImageData } from "next/image";
-
+import { Project } from "@/lib/types";
 import battleshipDesktop from "../projectsImages/Battleship-D.webp";
 import battleshipMobile from "../projectsImages/Battleship-M.webp";
 import budgetTrackerDesktop from "../projectsImages/BudgetTracker-D.webp";
@@ -8,15 +7,6 @@ import onlineBookstoreDesktop from "../projectsImages/OnlineBookstore-D.webp";
 import onlineBookstoreMobile from "../projectsImages/OnlineBookstore-M.webp";
 import roamTnTDesktop from "../projectsImages/RoamTnT-D.webp";
 import roamTnTMobile from "../projectsImages/RoamTnT-M.webp";
-
-interface Project {
-  title: string;
-  description: string;
-  mobileImage: StaticImageData;
-  desktopImage: StaticImageData;
-  live: string;
-  repository: string;
-}
 
 const projects: Project[] = [
   {

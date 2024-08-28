@@ -23,6 +23,7 @@ body {
   --accentdarkcolor: #2e5648;
   --errorbg: #f2d9d9;
   --successbg: #d9f2df;
+  --bgtransition: background-color ease 0.5s, color ease 0.8s;
 
   &[data-theme-dark] {
     --fgcolor: #f8f8f8;
@@ -43,7 +44,7 @@ body {
 
   color: var(--fgcolor);
   background-color: var(--bgcolor);
-  transition: background-color ease 0.5s, color ease 0.8s;
+  transition: var(--bgtransition);
 }
 
 :where(h1, h2, h3, h4, h5, h6) {

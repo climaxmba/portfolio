@@ -2,19 +2,6 @@ import { StaticImageData } from "next/image";
 import programmifyLogo from "../experienceImages/Programmify.webp";
 import TOPLogo from "../experienceImages/TOP.webp";
 
-interface Experience {
-  company: {
-    name: string;
-    image: StaticImageData;
-    url: string;
-  };
-  role: string;
-  description: string;
-  period: string;
-  location: string;
-  skills: string[];
-}
-
 const experiences: Experience[] = [
   {
     company: {
