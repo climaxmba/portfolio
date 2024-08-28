@@ -9,11 +9,12 @@
 .container {
   display: grid;
   gap: 2rem;
-  padding: 2rem;
+  padding: 2rem 0;
 
   .projectList {
     display: grid;
     gap: 5rem;
+    padding: 0 2rem;
 
     .project {
       display: flex;

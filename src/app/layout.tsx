@@ -7,12 +7,13 @@ import "./globals.scss";
 const mono = Ubuntu_Mono({
   weight: ["400", "700"],
   subsets: ["latin"],
-  fallback: ["Courier New", "Courier", "monospace"],
+  fallback: ["Courier New", "monospace"],
 });
 
 export const metadata: Metadata = {
   title: "Frontend Developer | Climax Mba",
-  description: `Frontend web developer, proficient in TypeScript, Next.js, and Redux, with a solid foundation in React, JavaScript and unit testing.
+  description: `Frontend web developer, proficient in TypeScript, Next.js, and Redux,
+    with a solid foundation in React, JavaScript and unit testing.
     Experienced in contributing to open-source projects and collaborating with teams.`,
 };
 

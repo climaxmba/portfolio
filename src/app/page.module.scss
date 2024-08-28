@@ -8,6 +8,7 @@
 
   min-height: 100vh;
   width: clamp(280px, 100%, 1024px);
+  overflow-x: hidden;
 
   section > *:first-child {
     margin-top: 4rem;

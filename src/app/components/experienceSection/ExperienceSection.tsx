@@ -2,7 +2,10 @@
 import Image from "next/image";
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
+
+import { Experience } from "@/lib/types";
 import experiences from "@/app/assets/data/experienceData";
+
 import styles from "./experienceSection.module.scss";
 
 export default function ExperienceSection() {
@@ -29,9 +32,9 @@ function ExperienceItem({ experience }: { experience: Experience }) {
   return (
     <motion.li
       ref={ref}
-      initial={{ opacity: 0, x: 20, y: "50%" }}
+      initial={{ opacity: 0, x: 10, y: "50%" }}
       animate={visible ? { opacity: 1, x: 0, y: 0 } : undefined}
-      transition={{ type: "tween", duration: 1 }}
+      transition={{ type: "tween", duration: 0.5 }}
       className={styles.about}
     >
       <h3>{experience.role}</h3>
