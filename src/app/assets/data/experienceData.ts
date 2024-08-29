@@ -1,4 +1,4 @@
-import { StaticImageData } from "next/image";
+import { Experience } from "@/lib/types";
 import programmifyLogo from "../experienceImages/Programmify.webp";
 import TOPLogo from "../experienceImages/TOP.webp";
 
