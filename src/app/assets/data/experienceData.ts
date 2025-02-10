@@ -7,16 +7,16 @@ const experiences: Experience[] = [
     company: {
       name: "Programmify",
       image: programmifyLogo,
-      url: "http://www.programmify.org/",
+      url: "https://www.programmify.org/",
     },
     role: "Frontend Developer Intern",
-    description: `As a frontend developer intern,
-      I'm actively engaged in a comprehensive program that combines hands-on project work with mentorship and team collaboration.
-      During the initial phase, I work on individual projects under the guidance of experienced mentors.
-      We meet twice a week for code reviews, where I receive valuable feedback and guidance to enhance my coding skills.
-      Following the completion of these personal projects, we form teams and collaborate on launching a product.
-      This collaborative phase allows me to apply the knowledge and skills I've acquired during the individual projects to real-world development challenges.`,
-    period: "August 2024 - Present",
+    description: `This internship combines hands-on project work with mentorship and team collaboration.
+      During the initial phase, I worked on individual projects under the guidance of experienced mentors.
+      We met twice a week for code reviews, where I receive valuable feedback and guidance.
+      During the final phase, I was assigned to work with a team of fellow interns to build a Web3 application.
+      Eventually, I was selected as one of the top 3 interns in Frontend Development,
+      and I am happy I was able to make valuable connections before the end of the program.`,
+    period: "August 2024 - December 2024",
     location: "Remote",
     skills: ["React", "Next.js", "TypeScript", "SASS", "JavaScript", "Git"],
   },
@@ -24,15 +24,17 @@ const experiences: Experience[] = [
     company: {
       name: "The Odin Project",
       image: TOPLogo,
-      url: "http://www.theodinproject.com/",
+      url: "https://www.theodinproject.com/",
     },
     role: "Student Frontend Developer",
-    description: `The Odin Project is an Open Source curriculum for Full-Stack web development.
-      Here, I'm implementing application designs, writing unit tests to verify the functionality of web applications,
-      consuming REST APIs and integrating Node packages for application functionality.`,
-    period: "January 2024 - Present",
+    description: `TheOdinProject is a curriculum for Full-Stack Web Development.
+      During my time here, I built a CV/Resume application that allows users to write and save/print their resume using a drag and drop interface in the browser.
+      I also built an in-browser game, Battleship. The game has a computer player that uses a powerful algorithm to boost its chances of beating a human player to over 50%!
+      Right now I’m moving forward to become a Full-Stack Engineer by learning PostgreSQL for databases and ExpressJS (with Node) for server-side development.
+      I will build projects like a Messaging App and Blog API.`,
+    period: "January 2023 - July 2024",
     location: "Remote",
-    skills: ["React", "Git", "NPM", "Webpack", "JavaScript", "HTML", "CSS"],
+    skills: ["React", "Vite", "Webpack", "JavaScript", "HTML", "CSS", "Git"],
   },
 ];
 
