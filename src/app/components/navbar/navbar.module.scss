@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: space-around;
   background-color: aliceblue;
-  padding: 0.5rem 1rem;
+  padding: 1rem;
   width: 100vw;
   color: var(--fgcolor);
   background-color: var(--bgcolor);
@@ -109,6 +109,11 @@
   .mobileMenu {
     display: none;
   }
+}
+
+[data-theme-dark] .container {
+  box-shadow: none;
+  border-bottom: 1px solid #464646;
 }
 
 @keyframes move-to-view {

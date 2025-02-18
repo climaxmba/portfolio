@@ -31,7 +31,7 @@ export default function ContactSection() {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams(
-          data as unknown as URLSearchParams
+          data as unknown as URLSearchParams,
         ).toString(),
       });
 
@@ -39,7 +39,7 @@ export default function ContactSection() {
       if (response.ok) {
         setError(null);
         form.reset();
-        setSuccess("Thanks! Your entry has been recorded.")
+        setSuccess("Thanks! Your entry has been recorded.");
       } else {
         setError(`Error: ${response.status} ${response.statusText}`);
       }
@@ -65,7 +65,9 @@ export default function ContactSection() {
         <div className={styles.error}>{error}</div>
       ) : success ? (
         <div className={styles.success}>{success}</div>
-      ) : <></>}
+      ) : (
+        <></>
+      )}
 
       <form
         action="/"
@@ -78,7 +80,13 @@ export default function ContactSection() {
         <input type="hidden" name="form-name" value="contact" />
         <label>
           Name:
-          <input type="text" name="name" placeholder="Alex Smith" autoComplete="name" required />
+          <input
+            type="text"
+            name="name"
+            placeholder="Alex Smith"
+            autoComplete="name"
+            required
+          />
         </label>
         <label>
           Email:

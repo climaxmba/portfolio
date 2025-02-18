@@ -47,24 +47,32 @@ function ProjectItem({ project }: { project: ProjectItemProps }) {
         <h3>{project.title}</h3>
         <p>{project.description}</p>
         <div className={styles.buttonsContainer}>
-          <a href={project.repository} target="_blank">
-            <button
-              title="View source code"
-              className="outlined icon-btn"
-              tabIndex={-1}
-            >
-              <GitHub /> Source Code
-            </button>
-          </a>
-          <a href={project.live} target="_blank">
-            <button
-              title="Open in new tab"
-              className={`${styles.viewLive} icon-btn`}
-              tabIndex={-1}
-            >
-              <Play /> View Live
-            </button>
-          </a>
+          {project.repository ? (
+            <a href={project.repository} rel="noreferrer" target="_blank">
+              <button
+                title="View source code"
+                className="outlined icon-btn"
+                tabIndex={-1}
+              >
+                <GitHub /> Source Code
+              </button>
+            </a>
+          ) : (
+            ""
+          )}
+          {project.live ? (
+            <a href={project.live} rel="noreferrer" target="_blank">
+              <button
+                title="Open in new tab"
+                className={`${styles.viewLive} icon-btn`}
+                tabIndex={-1}
+              >
+                <Play /> View Live
+              </button>
+            </a>
+          ) : (
+            ""
+          )}
         </div>
       </div>
       <div className={styles.imageContainer}>

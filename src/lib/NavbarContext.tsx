@@ -34,7 +34,7 @@ export default function NavbarProvider({
   const handleRemove = (id: string) => {
     if (intersectingIds.includes(id))
       setIntersectingIds(
-        intersectingIds.filter((intersectingId) => intersectingId !== id)
+        intersectingIds.filter((intersectingId) => intersectingId !== id),
       );
   };
 

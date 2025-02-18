@@ -38,7 +38,12 @@ function ExperienceItem({ experience }: { experience: Experience }) {
       className={styles.about}
     >
       <h3>{experience.role}</h3>
-      <a href={experience.company.url} className={styles.company}>
+      <a
+        href={experience.company.url}
+        target="_blank"
+        rel="noreferrer"
+        className={styles.company}
+      >
         <Image
           alt="Company's Logo"
           src={experience.company.image.src}

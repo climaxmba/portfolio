@@ -18,6 +18,6 @@ interface Project {
   description: string;
   mobileImage: StaticImageData;
   desktopImage: StaticImageData;
-  live: string;
-  repository: string;
+  live?: string;
+  repository?: string;
 }

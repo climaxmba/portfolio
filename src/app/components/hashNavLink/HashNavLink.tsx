@@ -33,7 +33,7 @@ export default function HashNavLink({
           removeId(id);
         }
       },
-      { rootMargin: "0px 0px -100px 0px" }
+      { rootMargin: "0px 0px -100px 0px" },
     );
 
     const targetElement = document.getElementById(id);
