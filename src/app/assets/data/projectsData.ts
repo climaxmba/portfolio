@@ -3,12 +3,35 @@ import battleshipDesktop from "../projectsImages/Battleship-D.webp";
 import battleshipMobile from "../projectsImages/Battleship-M.webp";
 import budgetTrackerDesktop from "../projectsImages/BudgetTracker-D.webp";
 import budgetTrackerMobile from "../projectsImages/BudgetTracker-M.webp";
+import agroMonitorDesktop from "../projectsImages/AgroMonitor-D.webp";
+import agroMonitorMobile from "../projectsImages/AgroMonitor-M.webp";
 import onlineBookstoreDesktop from "../projectsImages/OnlineBookstore-D.webp";
 import onlineBookstoreMobile from "../projectsImages/OnlineBookstore-M.webp";
+import readMeBlogDesktop from "../projectsImages/ReadMeBlog-D.webp";
+import readMeBlogMobile from "../projectsImages/ReadMeBlog-M.webp";
 import roamTnTDesktop from "../projectsImages/RoamTnT-D.webp";
 import roamTnTMobile from "../projectsImages/RoamTnT-M.webp";
 
 const projects: Project[] = [
+  {
+    title: "Readme Blog",
+    description: `This blog serves as a comprehensive resource hub for software engineers of all levels.
+    It offers a clean, intuitive interface for exploring in-depth articles on programming languages, algorithms, data structures, and more.
+    ReadMe Blog offers syntax formatting & highlighting in code examples, wishlist to store your favorite articles and a feeback form for each blog.`,
+    mobileImage: readMeBlogMobile,
+    desktopImage: readMeBlogDesktop,
+    live: "https://climaxmba-readme-blog.netlify.app/",
+    repository: "https://github.com/climaxmba/readme-blog",
+  },
+  {
+    title: "Matrix AgroMonitor",
+    description: `Matrix AgroMonitor is a robust Farm Management Platform.
+      Features includes offline submission for farm reports,
+      user permissions for authorization, notifications, weather forecast and geo-location for monitoring.
+      It is currently being used by a company in the agricultural industry.`,
+    mobileImage: agroMonitorMobile,
+    desktopImage: agroMonitorDesktop,
+  },
   {
     title: "Online Bookstore",
     description: `Discover a vast collection of books, conveniently organized into categories.

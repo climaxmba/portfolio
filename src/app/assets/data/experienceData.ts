@@ -1,15 +1,45 @@
 import { Experience } from "@/lib/types";
+import bizGrowthHackerzLogo from "../experienceImages/BizGrowthHackerz.webp";
+import CDTCLogo from "../experienceImages/CDTC.webp";
 import programmifyLogo from "../experienceImages/Programmify.webp";
 import TOPLogo from "../experienceImages/TOP.webp";
 
 const experiences: Experience[] = [
   {
     company: {
+      name: "TheBizGrowthHackerz",
+      image: bizGrowthHackerzLogo,
+      url: "https://bizgrowthhackerz.com/",
+    },
+    role: "Frontend Engineer",
+    description: `I built a Farm Management System alongside the team. Based on the client’s feedback and requests, 
+      we transformed it to a Progressive Web App, allowing farm personnel to use the application in remote areas, (e.g on-site, in the farm).
+      I implemented features to allow offline submission for farm reports, user permissions for authorization, notifications and geo-location for monitoring.
+      I was also involved in re-building a portfolio website to match the given requirements and implementing the designs for a Farm Monitoring System.`,
+    period: "October 2024 - February 2025",
+    location: "Remote",
+    skills: ["TypeScript", "Next.js", "React", "TailwindCSS"],
+  },
+  {
+    company: {
+      name: "CapacityDey Tech Club",
+      image: CDTCLogo,
+      url: "https://capacitydey.org/",
+    },
+    role: "Frontend Engineer - Contributor",
+    description: `At CapacityDey Tech Club, I worked alongside fellow Frontend Engineers,
+      Product Designers and Backend Engineers to build a Software Product to revolutionize healthcare across Africa.`,
+    period: "October 2024 - February 2025",
+    location: "Remote",
+    skills: ["TypeScript", "React", "TailwindCSS"],
+  },
+  {
+    company: {
       name: "Programmify",
       image: programmifyLogo,
       url: "https://www.programmify.org/",
     },
-    role: "Frontend Developer Intern",
+    role: "Frontend Developer - Intern",
     description: `This internship combines hands-on project work with mentorship and team collaboration.
       During the initial phase, I worked on individual projects under the guidance of experienced mentors.
       We met twice a week for code reviews, where I receive valuable feedback and guidance.

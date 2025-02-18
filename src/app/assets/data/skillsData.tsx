@@ -43,16 +43,16 @@ const skills: Skill[] = [
     text: "NPM",
   },
   {
+    Icon: TailWind,
+    text: "TailwindCSS",
+  },
+  {
     Icon: MUI,
     text: "MUI (Material UI)",
   },
   {
     Icon: SASS,
     text: "SASS",
-  },
-  {
-    Icon: TailWind,
-    text: "Tailwind",
   },
   {
     Icon: HTML,
