@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
-import { Ubuntu_Mono } from "next/font/google";
-import Footer from "./components/footer/Footer";
-import Navbar from "./components/navbar/Navbar";
-import "./globals.scss";
+import { Geist, Geist_Mono } from "next/font/google";
+import "./globals.css";
 
-const mono = Ubuntu_Mono({
-  weight: ["400", "700"],
+const geistSans = Geist({
+  variable: "--font-geist-sans",
   subsets: ["latin"],
-  fallback: ["Courier New", "monospace"],
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
@@ -25,14 +27,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        style={{
-          fontFamily: mono.style.fontFamily,
-          fontStyle: mono.style.fontStyle,
-        }}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Navbar />
         {children}
-        <Footer />
       </body>
     </html>
   );
