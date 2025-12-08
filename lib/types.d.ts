@@ -20,4 +20,7 @@ interface Project {
   desktopImage: StaticImageData;
   live?: string;
   repository?: string;
+  isPrivateRepo: boolean;
+  isClientProject: boolean;
+  tags: string[];
 }

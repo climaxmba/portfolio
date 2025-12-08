@@ -22,6 +22,9 @@ const projects: Project[] = [
     desktopImage: readMeBlogDesktop,
     live: "https://climaxmba-readme-blog.netlify.app/",
     repository: "https://github.com/climaxmba/readme-blog",
+    isPrivateRepo: false,
+    isClientProject: false,
+    tags: ["React", "TypeScript", "SASS", "Netlify"]
   },
   {
     title: "Matrix AgroMonitor",
@@ -31,6 +34,9 @@ const projects: Project[] = [
       It is currently being used by a company in the agricultural industry.`,
     mobileImage: agroMonitorMobile,
     desktopImage: agroMonitorDesktop,
+    isPrivateRepo: true,
+    isClientProject: true,
+    tags: ["React", "TypeScript", "Tailwind"]
   },
   {
     title: "Online Bookstore",
@@ -40,6 +46,9 @@ const projects: Project[] = [
     desktopImage: onlineBookstoreDesktop,
     live: "https://climaxmba-bookstore.netlify.app/",
     repository: "https://github.com/climaxmba/online-bookstore",
+    isPrivateRepo: false,
+    isClientProject: false,
+    tags: ["React", "SASS", "Tailwind"]
   },
   {
     title: "Roam Travel & Tours",
@@ -50,6 +59,9 @@ const projects: Project[] = [
     desktopImage: roamTnTDesktop,
     live: "https://climaxmba-roamtnt.netlify.app/",
     repository: "https://github.com/climaxmba/roam-tnt",
+    isPrivateRepo: false,
+    isClientProject: false,
+    tags: ["React", "SASS", "TypeScript"]
   },
   {
     title: "Battleship",
@@ -61,6 +73,9 @@ const projects: Project[] = [
     desktopImage: battleshipDesktop,
     live: "https://climaxmba.github.io/battleship",
     repository: "https://github.com/climaxmba/battleship/",
+    isPrivateRepo: false,
+    isClientProject: false,
+    tags: ["React", "TypeScript", "SASS"]
   },
   {
     title: "Budget Tracker",
@@ -72,6 +87,9 @@ const projects: Project[] = [
     desktopImage: budgetTrackerDesktop,
     live: "https://climaxmba.github.io/budget-tracker/",
     repository: "https://github.com/climaxmba/budget-tracker",
+    isPrivateRepo: false,
+    isClientProject: false,
+    tags: ["JavaScript", "CSS", "HTML"]
   },
 ];
 

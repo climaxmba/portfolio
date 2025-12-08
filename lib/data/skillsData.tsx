@@ -1,69 +1,69 @@
 import type React from "react";
 
 interface Skill {
-  Icon: () => React.JSX.Element;
+  icon: React.JSX.Element;
   text: string;
 }
 
 const skills: Skill[] = [
   {
-    Icon: ReactIcon,
+    icon: <ReactIcon />,
     text: "React",
   },
   {
-    Icon: Next,
+    icon: <Next />,
     text: "Next.js",
   },
   {
-    Icon: Redux,
+    icon: <Redux />,
     text: "Redux",
   },
   {
-    Icon: TypeScript,
+    icon: <TypeScript />,
     text: "TypeScript",
   },
   {
-    Icon: JavaScript,
+    icon: <JavaScript />,
     text: "JavaScript",
   },
   {
-    Icon: Jest,
+    icon: <Jest />,
     text: "Jest",
   },
   {
-    Icon: Vitest,
+    icon: <Vitest />,
     text: "Vitest",
   },
   {
-    Icon: Webpack,
+    icon: <Webpack />,
     text: "Webpack",
   },
   {
-    Icon: NPM,
+    icon: <NPM />,
     text: "NPM",
   },
   {
-    Icon: TailWind,
+    icon: <TailWind />,
     text: "TailwindCSS",
   },
   {
-    Icon: MUI,
+    icon: <MUI />,
     text: "MUI (Material UI)",
   },
   {
-    Icon: SASS,
+    icon: <SASS />,
     text: "SASS",
   },
   {
-    Icon: HTML,
+    icon: <HTML />,
     text: "HTML",
   },
   {
-    Icon: CSS,
+    icon: <CSS />,
     text: "CSS",
   },
   {
-    Icon: Git,
+    icon: <Git />,
     text: "Git",
   },
 ];
