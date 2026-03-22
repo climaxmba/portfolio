@@ -1,16 +1,16 @@
 import { Project } from "@/lib/types";
-import battleshipDesktop from "../projectsImages/Battleship-D.webp";
-import battleshipMobile from "../projectsImages/Battleship-M.webp";
-import budgetTrackerDesktop from "../projectsImages/BudgetTracker-D.webp";
-import budgetTrackerMobile from "../projectsImages/BudgetTracker-M.webp";
-import agroMonitorDesktop from "../projectsImages/AgroMonitor-D.webp";
-import agroMonitorMobile from "../projectsImages/AgroMonitor-M.webp";
-import onlineBookstoreDesktop from "../projectsImages/OnlineBookstore-D.webp";
-import onlineBookstoreMobile from "../projectsImages/OnlineBookstore-M.webp";
-import readMeBlogDesktop from "../projectsImages/ReadMeBlog-D.webp";
-import readMeBlogMobile from "../projectsImages/ReadMeBlog-M.webp";
-import roamTnTDesktop from "../projectsImages/RoamTnT-D.webp";
-import roamTnTMobile from "../projectsImages/RoamTnT-M.webp";
+import battleshipDesktop from "@/assets/projectsImages/Battleship-D.webp";
+import battleshipMobile from "@/assets/projectsImages/Battleship-M.webp";
+import budgetTrackerDesktop from "@/assets/projectsImages/BudgetTracker-D.webp";
+import budgetTrackerMobile from "@/assets/projectsImages/BudgetTracker-M.webp";
+import agroMonitorDesktop from "@/assets/projectsImages/AgroMonitor-D.webp";
+import agroMonitorMobile from "@/assets/projectsImages/AgroMonitor-M.webp";
+import onlineBookstoreDesktop from "@/assets/projectsImages/OnlineBookstore-D.webp";
+import onlineBookstoreMobile from "@/assets/projectsImages/OnlineBookstore-M.webp";
+import readMeBlogDesktop from "@/assets/projectsImages/ReadMeBlog-D.webp";
+import readMeBlogMobile from "@/assets/projectsImages/ReadMeBlog-M.webp";
+import roamTnTDesktop from "@/assets/projectsImages/RoamTnT-D.webp";
+import roamTnTMobile from "@/assets/projectsImages/RoamTnT-M.webp";
 
 const projects: Project[] = [
   {

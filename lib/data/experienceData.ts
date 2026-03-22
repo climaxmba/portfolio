@@ -1,8 +1,8 @@
 import { Experience } from "@/lib/types";
-import bizGrowthHackerzLogo from "../experienceImages/BizGrowthHackerz.webp";
-import CDTCLogo from "../experienceImages/CDTC.webp";
-import programmifyLogo from "../experienceImages/Programmify.webp";
-import TOPLogo from "../experienceImages/TOP.webp";
+import bizGrowthHackerzLogo from "@/assets/experienceImages/BizGrowthHackerz.webp";
+import CDTCLogo from "@/assets/experienceImages/CDTC.webp";
+import programmifyLogo from "@/assets/experienceImages/Programmify.webp";
+import TOPLogo from "@/assets/experienceImages/TOP.webp";
 
 const experiences: Experience[] = [
   {
