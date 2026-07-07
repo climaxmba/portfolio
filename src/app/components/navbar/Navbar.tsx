@@ -33,51 +33,56 @@ export default function Navbar() {
   };
 
   return (
-    <nav className={styles.container}>
-      <Image alt="Logo" src="/logo.svg" width={40} height={40} />
+    <>
+      <div className={styles.banner}>
+        A new and updated version of this portfolio is in development
+      </div>
+      <nav className={styles.container}>
+        <Image alt="Logo" src="/logo.svg" width={40} height={40} />
 
-      <NavbarProvider>
-        <ul className={styles.links}>
-          <li>
-            <HashNavLink href="/#about" activeClassName={styles.active}>
-              About
-            </HashNavLink>
-          </li>
-          <li>
-            <HashNavLink href="/#projects" activeClassName={styles.active}>
-              Projects
-            </HashNavLink>
-          </li>
-          <li>
-            <HashNavLink href="/#skills" activeClassName={styles.active}>
-              Skills
-            </HashNavLink>
-          </li>
-          <li>
-            <HashNavLink href="/#experience" activeClassName={styles.active}>
-              Experience
-            </HashNavLink>
-          </li>
-          <li>
-            <HashNavLink href="/#contact" activeClassName={styles.active}>
-              Contact
-            </HashNavLink>
-          </li>
-        </ul>
-      </NavbarProvider>
+        <NavbarProvider>
+          <ul className={styles.links}>
+            <li>
+              <HashNavLink href="/#about" activeClassName={styles.active}>
+                About
+              </HashNavLink>
+            </li>
+            <li>
+              <HashNavLink href="/#projects" activeClassName={styles.active}>
+                Projects
+              </HashNavLink>
+            </li>
+            <li>
+              <HashNavLink href="/#skills" activeClassName={styles.active}>
+                Skills
+              </HashNavLink>
+            </li>
+            <li>
+              <HashNavLink href="/#experience" activeClassName={styles.active}>
+                Experience
+              </HashNavLink>
+            </li>
+            <li>
+              <HashNavLink href="/#contact" activeClassName={styles.active}>
+                Contact
+              </HashNavLink>
+            </li>
+          </ul>
+        </NavbarProvider>
 
-      <div className={styles.mobileSeperator}></div>
+        <div className={styles.mobileSeperator}></div>
 
-      <button
-        title="Toggle Theme"
-        className="icon-wrapper"
-        onClick={handleModeSwitch}
-      >
-        {isDarkMode ? <Light /> : <Dark />}
-      </button>
+        <button
+          title="Toggle Theme"
+          className="icon-wrapper"
+          onClick={handleModeSwitch}
+        >
+          {isDarkMode ? <Light /> : <Dark />}
+        </button>
 
-      <MobileMenu />
-    </nav>
+        <MobileMenu />
+      </nav>
+    </>
   );
 }
 

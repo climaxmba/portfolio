@@ -1,3 +1,16 @@
+.banner {
+  background-color: var(--accentcolor);
+  color: var(--bgcolor);
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 11;
+}
+
 .container {
   display: flex;
   gap: 1rem;
@@ -10,7 +23,7 @@
   background-color: var(--bgcolor);
   box-shadow: 0 1px 3px 3px #80808040;
   position: fixed;
-  top: 0;
+  top: 35px; // Increased top to accommodate banner
   z-index: 10;
 
   img {
